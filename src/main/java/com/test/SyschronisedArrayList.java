@@ -13,6 +13,6 @@ public class SyschronisedArrayList
 		nonal.add("jkl");
 		nonal.add("mno");
 		
-		Iterable<String> itr = nonal.iterator();
+		Iterable<String> itr = (Iterable<String>) nonal.iterator();
 	}
 }

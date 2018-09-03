@@ -1,6 +1,7 @@
 package com.test;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import com.google.common.collect.ImmutableList;
@@ -15,6 +16,6 @@ public class ImmutableListjava
 		l1.add("aweg");
 		l1.add("tyil");
 		
-		ImmutableList<String> s1 = l1;
+		Collections.unmodifiableList(l1);
 	}
 }

@@ -3,8 +3,9 @@ package com.test;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import com.google.common.collect.ImmutableList;
 
-public class ImmutableList
+public class ImmutableListTest
 {
 	public static void main(String[] args)
 	{
@@ -35,6 +36,6 @@ public class ImmutableList
 			System.out.println(a);
 		}
 		
-		com.google.common.collect.ImmutableList<E>
+	//	ImmutableList<String> s1 = ImmutableList<String>.;
 	}
 }

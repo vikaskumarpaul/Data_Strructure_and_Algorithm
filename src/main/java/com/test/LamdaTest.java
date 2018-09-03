@@ -3,11 +3,13 @@ public class LamdaTest
 {
 	public static void main(String[] args)
 	{
-		FirstInterface f1 = (String abc) -> 
+		String s1 = "vikas";
+		
+		FirstInterface f1 = (String p1) -> 
 		{
 			System.out.println("abc: "+abc);
 		};
 		
-		f1.singleMethod("Vikas");
+		f1.hellostring(s1);
 	}
 }
