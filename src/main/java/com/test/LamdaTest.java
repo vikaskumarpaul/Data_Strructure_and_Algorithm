@@ -5,11 +5,10 @@ public class LamdaTest
 	{
 		String s1 = "vikas";
 		
-		FirstInterface f1 = (String p1) -> 
-		{
-			System.out.println("abc: "+abc);
-		};
-		
-		f1.hellostring(s1);
+		/*
+		 * FirstInterface f1 = (String p1) -> System.out.println("abc: "+abc);
+		 * 
+		 * f1.hellostring(s1);
+		 */
 	}
 }
