@@ -1,4 +1,4 @@
-package com.test;
+ackage com.test;
 
 public class PrintPaul implements Runnable
 {

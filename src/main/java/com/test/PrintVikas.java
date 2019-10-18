@@ -7,5 +7,6 @@ public class PrintVikas implements Runnable
 	public void run()
 	{
 		System.out.print("Vikas ");
+		System.out.println();
 	}
 }

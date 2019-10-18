@@ -1,12 +1,8 @@
 package com.test;
 
-import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
-import java.util.concurrent.ThreadFactory;
-
-import com.google.common.util.concurrent.ThreadFactoryBuilder;
 
 public class TestExecutor
 {

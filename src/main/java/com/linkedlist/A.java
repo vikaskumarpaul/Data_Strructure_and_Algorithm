@@ -1,9 +1,13 @@
 package com.linkedlist;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class A
 {
-	A()
+	public static void main(String[] args)
 	{
-		System.out.println("A");
+		ArrayList<String> l1 = new ArrayList(20);
+		System.out.println();
 	}
 }

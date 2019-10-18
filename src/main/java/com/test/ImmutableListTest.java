@@ -3,7 +3,6 @@ package com.test;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import com.google.common.collect.ImmutableList;
 
 public class ImmutableListTest
 {
@@ -20,7 +19,7 @@ public class ImmutableListTest
 		l1.add("rutn");
 		
 		List<String> un = Collections.unmodifiableList(l1);
-		un.remove(2);
+//		un.remove(2);
 		for(String a:l1)
 		{
 			System.out.println(a);

@@ -9,6 +9,7 @@ public class CallableTest1 implements Callable<Integer>
 	public Integer call() throws Exception
 	{
 		System.out.println("Callable Test1");
+		Thread.sleep(1000);
 		return 10+10+10;
 	}
 	
