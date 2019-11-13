@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class ReentrantDemo
 {
-	private static final ReentrantLock lock = new ReentrantLock(true);
+	//private static final ReentrantLock lock = new ReentrantLock(true);
 	private static final ArrayBlockingQueue<Integer> queue = new ArrayBlockingQueue<Integer>(
 			10);
 	private static int counter = 0;
@@ -18,7 +18,7 @@ public class ReentrantDemo
 		{
 			String currString = Thread.currentThread().getName();
 			System.out.println("Thread accured: " + currString);
-			lock.lock();
+			//lock.lock();
 			while (counter < 10)
 			{
 				queue.add(counter++);
@@ -26,7 +26,7 @@ public class ReentrantDemo
 			System.out.println("queue size: " + queue.size());
 		} finally
 		{
-			lock.unlock();
+			//lock.unlock();
 		}
 	}
 
@@ -34,7 +34,7 @@ public class ReentrantDemo
 	{
 		try
 		{
-			lock.lock();
+			//lock.lock();
 			while (counter != 0)
 			{
 				int removing = queue.poll();
@@ -43,14 +43,14 @@ public class ReentrantDemo
 			}
 		} finally
 		{
-			lock.unlock();
+			//lock.unlock();
 		}
 	}
 
 	public static void main(String[] args)
 	{
 
-		ExecutorService executor = Executors.newFixedThreadPool(4);
+		ExecutorService executor = Executors.newFixedThreadPool(1);
 		executor.execute(() -> adding());
 		executor.execute(() -> checking());
 		System.out.println("Shutting Down: "+executor.shutdownNow());

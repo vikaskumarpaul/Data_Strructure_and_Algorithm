@@ -13,7 +13,7 @@ public class Test
 					"Value of effectively variable is : " + effectiveFinal);
 		};
 		StringBuilder builder = new StringBuilder();
-		builder.append(b)
+		builder.append(effectiveFinal);
 		Thread t = new Thread(r);
 		t.start();
 	}

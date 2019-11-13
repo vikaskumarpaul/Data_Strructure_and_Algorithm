@@ -11,7 +11,6 @@ public class Test6
 	{
 		Scanner sc = new Scanner(System.in);
 		String data = sc.nextLine();
-		data.is
 		String[] splittedData = data.split(" ");
 		
 		String dataToOperate = splittedData[1];

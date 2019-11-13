@@ -20,4 +20,12 @@ public class Shared
 		
 		System.out.println("Test1 End...");
 	}
+	
+	public static void main(String[] args)
+	{
+		synchronized
+		{
+			
+		}
+	}
 }
